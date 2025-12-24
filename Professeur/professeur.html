@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestion Professeurs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<div class="container">
+
+    <h1>👩‍🏫 Gestion des Professeurs</h1>
+
+    <div class="card">
+        <form id="profForm">
+            <div class="input-group">
+                <input type="text" id="nom" required>
+                <label>Nom</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="prenom" required>
+                <label>Prénom</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="matiere" required>
+                <label>Matière</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="niveau" required>
+                <label>Niveau</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="frais" required>
+                <label>Frais</label>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" id="tel" required>
+                <label>Téléphone</label>
+            </div>
+
+            <button type="submit">Ajouter ✨</button>
+        </form>
+    </div>
+
+    <div class="table-card">
+        <h2>📋 Liste des Professeurs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Matière</th>
+                    <th>Niveau</th>
+                    <th>Frais</th>
+                    <th>Téléphone</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
