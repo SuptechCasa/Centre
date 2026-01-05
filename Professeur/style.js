@@ -12,6 +12,7 @@ form.addEventListener("submit", (e) => {
         niveau.value,
         frais.value,
         tel.value
+        
     ];
 
     const row = document.createElement("tr");
