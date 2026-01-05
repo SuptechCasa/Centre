@@ -1,5 +1,9 @@
+const professeurs = require('./data').professeurs;
 const express = require('express');
+const cose = require('cors');
 const app = express();
+app.use(express.json());
+app.use(cose());
 
 
 app.get('/', (req, res) => {
@@ -15,6 +19,14 @@ app.post('/eleves', (req, res) => {
 
 app.delete('/eleves', (req, res) => {
   res.send('Supprimer un élève');
+});
+app.get('/professeurs', (req, res) => {
+  res.send(professeurs);
+});
+app.post('/professeurs', (req, res) => {
+  professeurs.push(req.body);
+  console.log(professeurs);
+  res.send('Enregistrer un professeur');
 });
 
 app.listen(3000, () => {
