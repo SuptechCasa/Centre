@@ -155,5 +155,5 @@ app.delete('/cours/:id', (req, res) => {
 
 
 app.listen(3000, () => {
-  console.log(`Server is running at http://localhost:3000`);
+  console.log(`Server is running at http://vinus:3000`);
 });
