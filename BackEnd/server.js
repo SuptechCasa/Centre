@@ -1,9 +1,9 @@
 const { professeurs, cours, salles, eleves } = require('./data');
 const express = require('express');
-const cose = require('cors');
+const cors = require('cors');
 const app = express();
 app.use(express.json());
-app.use(cose());
+app.use(cors());
 
 
 
