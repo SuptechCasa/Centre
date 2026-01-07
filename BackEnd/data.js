@@ -1,5 +1,4 @@
 export const professeurs = []
-export const matieres = []
 export const classes = []
 export const salles = []
 export const eleves = []
