@@ -36,7 +36,7 @@ app.post('/eleves', (req, res) => {
   eleves.push(newEleve);
   res.status(201).send(newEleve);
 });
-
+// eleves
 app.delete('/eleves/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const index = eleves.findIndex(e => e.id === id);
